@@ -1,0 +1,215 @@
+:root{
+    
+ 
+    --app-background : #eae6df;
+    --app-background-deeper : #d1d7db;
+}
+
+
+
+
+body{
+   /* background-color: green;*/
+
+
+   background-color: var(--app-background);
+    background-image: linear-gradient( 180deg, var(--app-background),var(--app-background-deeper));
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Fira Sans',sans-serif;
+
+  
+
+    /*overflow: hidden;*/
+}
+
+/* Réglage de l'entete verte */
+
+div[id="header"]::before{
+    background-color: #00a884;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 222px;
+    content: "";
+    z-index: -1;
+}
+
+div[id="header"]{
+    display: flex;
+    justify-content: center;
+    /*margin-top: 27px;*/
+    z-index: 2;
+}
+
+header{
+    display: flex;
+    width: 1050px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 39px;
+    margin: 27px auto 28px ;
+   /* border: 2px solid blue;*/
+}
+
+header svg{
+    /*margin-left: 150px; */
+    width: 39px;
+    height: 39px;
+}
+
+header p{
+    /* margin-left: 14px;
+        /*display: inline-block;
+    font-size: 14px;
+    font-weight: 500px;
+     */
+    font-family: inherit;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+
+div[id="main"]{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 909px;
+    height: 896px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 17px 50px 0 rgb(11 20 26 / 19%), 0 12px 15px 0 rgb(11 20 26 / 24%);
+    margin-bottom: 100px;
+
+    /*padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;*/
+
+}
+
+section[id="firstSection"]{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 789px;
+    height: 264px;
+    background-color: white;
+    padding: 64px 60px 110px;
+    margin: auto;
+    border-radius: 3px 3px 0px 0px;
+    /*box-shadow: 5px 5px 5px black;*/
+    /*position: relative;*/
+}
+
+section[id="firstSection"] a{
+    font-size: 14px;
+    line-height: 1;
+    color: #008069;
+    text-decoration: none; 
+    margin-top: 5px;
+    /*margin-top: 30px;*/
+ }
+
+div[id="instructionAndQrCode"]{
+    display: flex;
+    flex: 1;
+    /*background-color: blue;*/
+    width: 789px;
+    height: 264px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+    
+}
+
+div[id="instruction"]{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 465px;
+    height: 255px;
+    margin-top: 0px;
+    /*background-color: yellow;*/
+    
+}
+div[id="instruction"] h1{
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    color: #41525d;
+    margin-bottom: 52px;
+    /*font-family: "Segeo UI";*/
+}
+div[id="instruction"] ol{
+    /*margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;*/
+    list-style: none;
+    list-style-type: decimal;
+    margin-left: 25px;
+    padding: 0;
+    
+}
+
+div[id="instruction"] li{
+   font-size: 18px;
+   line-height: 28px;
+   color: #3b4a54;
+   display: list-item;
+   list-style-position: outside;
+   margin-bottom: 10px;
+
+   /*unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;*/
+}
+
+strong{
+    font-weight: 500;
+}
+
+span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 2nd part */
+
+section[id="secondSection"]{
+    width: 789px;
+    height: 314px;
+    background-color: rgba(11,20,26,.025);
+    padding: 72px 60px;
+    margin: auto;
+    border-radius: 0px 0px 3px 3px;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section[id="secondSection"] video{
+    width: 560px;
+    height: 314px;
+    background-color: rgba(11,20,26,.025);
+    padding: 72px 60px;
+    opacity: 1;
+    margin: auto;
+}
