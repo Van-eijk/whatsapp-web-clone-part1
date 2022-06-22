@@ -9,6 +9,15 @@
 
 
 body{
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
    /* background-color: green;*/
 
 
@@ -26,20 +35,30 @@ body{
 /* Réglage de l'entete verte */
 
 div[id="header"]::before{
+    display: flex;
+    flex: 1;
     background-color: #00a884;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    /*width: 100%;*/
     height: 222px;
     content: "";
     z-index: -1;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 div[id="header"]{
     display: flex;
     justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    /*background-color: red;*/
     /*margin-top: 27px;*/
     z-index: 2;
 }
@@ -79,9 +98,10 @@ header p{
 
 div[id="main"]{
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
-    width: 909px;
+    max-width: 909px;
     height: 896px;
     margin: auto;
     background-color: white;
@@ -89,26 +109,36 @@ div[id="main"]{
     box-shadow: 0 17px 50px 0 rgb(11 20 26 / 19%), 0 12px 15px 0 rgb(11 20 26 / 24%);
     margin-bottom: 100px;
 
-    /*padding-left: 0px;
+    padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-    padding-bottom: 0px;*/
+    padding-bottom: 0px;
 
 }
 
 section[id="firstSection"]{
     display: flex;
+    /*flex: 1;*/
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch ;
     justify-content: space-between;
     width: 789px;
     height: 264px;
     background-color: white;
     padding: 64px 60px 110px;
     margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    /*position: absolute;
+    z-index: 2;*/
+    
     border-radius: 3px 3px 0px 0px;
-    /*box-shadow: 5px 5px 5px black;*/
-    /*position: relative;*/
+    /*box-shadow: 5px 5px 5px black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; */
 }
 
 section[id="firstSection"] a{
@@ -116,19 +146,27 @@ section[id="firstSection"] a{
     line-height: 1;
     color: #008069;
     text-decoration: none; 
-    margin-top: 5px;
+    /*position: absolute;
+    left: 60px;
+    bottom: 66px;*/
+    text-align: justify;
+    margin-top: 10px;
     /*margin-top: 30px;*/
  }
 
 div[id="instructionAndQrCode"]{
     display: flex;
-    flex: 1;
+    flex-wrap: wrap;
     /*background-color: blue;*/
-    width: 789px;
+    /*max-width: 909px;*/
     height: 264px;
-    justify-content: space-between;
-    align-items: flex-start;
+    /*justify-content: flex-end;*/
+    /*align-items: flex-start;*/
     margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
     
     
 }
@@ -136,20 +174,38 @@ div[id="instructionAndQrCode"]{
 div[id="instruction"]{
     display: flex;
     flex-direction: column;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
     flex: 1;
-    width: 465px;
+    /*max-width: 465px;*/
     height: 255px;
     margin-top: 0px;
+    margin-left: 0px;
     /*background-color: yellow;*/
     
 }
 div[id="instruction"] h1{
+    display: flex;
+    /*flex: 1;*/
+    flex-wrap: wrap;
     margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 52px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+   /* width: 465px;
+    height: 37px;*/
+
     font-size: 28px;
     font-weight: 300;
     line-height: normal;
     color: #41525d;
-    margin-bottom: 52px;
+    vertical-align: initial;
+    outline: none;
     /*font-family: "Segeo UI";*/
 }
 div[id="instruction"] ol{
@@ -158,10 +214,22 @@ div[id="instruction"] ol{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     list-style: none;
     list-style-type: decimal;
-    margin-left: 25px;
-    padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 24px;
+    height: 166px;
+    /*background-color: blue;*/
     
 }
 
@@ -169,9 +237,9 @@ div[id="instruction"] li{
    font-size: 18px;
    line-height: 28px;
    color: #3b4a54;
-   display: list-item;
+   /*display: list-item;*/
    list-style-position: outside;
-   margin-bottom: 10px;
+   /*margin-bottom: 10px;*/
 
    /*unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
@@ -190,12 +258,19 @@ span{
     vertical-align: top;
 }
 
+img{
+    /*margin-left: 85px;*/
+    margin-left: 0px;
+
+    margin-right: 0px;
+}
+
 /* 2nd part */
 
 section[id="secondSection"]{
     width: 789px;
     height: 314px;
-    background-color: rgba(11,20,26,.025);
+   /* background-color: rgba(11,20,26,.025);*/
     padding: 72px 60px;
     margin: auto;
     border-radius: 0px 0px 3px 3px;
@@ -204,12 +279,20 @@ section[id="secondSection"]{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+
 }
 section[id="secondSection"] video{
     width: 560px;
     height: 314px;
-    background-color: rgba(11,20,26,.025);
-    padding: 72px 60px;
-    opacity: 1;
-    margin: auto;
+    /*background-color: rgba(11,20,26,.025);*/
+    /*padding: 72px 60px;*/
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
