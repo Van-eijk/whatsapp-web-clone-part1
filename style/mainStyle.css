@@ -1,9 +1,19 @@
 :root{
+    /*min-width: 719px;*/
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 827px;
+
+
     
  
     --app-background : #eae6df;
     --app-background-deeper : #d1d7db;
+    /*background-color: blue;*/
 }
+
 
 
 
@@ -18,10 +28,11 @@ body{
     margin-right: 6px;
     margin-top: 0px;
     margin-bottom: 0px;
-   /* background-color: green;*/
+    /*min-width: 827px;*/
+    /*background-color: green;*/
 
 
-   background-color: var(--app-background);
+    background-color: var(--app-background);
     background-image: linear-gradient( 180deg, var(--app-background),var(--app-background-deeper));
     background-repeat: no-repeat;
     background-size: auto;
@@ -42,7 +53,9 @@ div[id="header"]::before{
     top: 0;
     left: 0;
     right: 0;
-    /*width: 100%;*/
+    width: 100%;
+    min-width: 827px;
+
     height: 222px;
     content: "";
     z-index: -1;
@@ -102,6 +115,7 @@ div[id="main"]{
     flex-direction: column;
     align-items: flex-start;
     max-width: 909px;
+    min-width: 727px;
     height: 896px;
     margin: auto;
     background-color: white;
@@ -122,7 +136,9 @@ section[id="firstSection"]{
     flex-direction: column;
     align-items: stretch ;
     justify-content: space-between;
-    width: 789px;
+    max-width: 789px;
+    min-width: 607px;
+
     height: 264px;
     background-color: white;
     padding: 64px 60px 110px;
@@ -142,6 +158,7 @@ section[id="firstSection"]{
 }
 
 section[id="firstSection"] a{
+    display: inline-block;
     font-size: 14px;
     line-height: 1;
     color: #008069;
@@ -151,12 +168,32 @@ section[id="firstSection"] a{
     bottom: 66px;*/
     text-align: justify;
     margin-top: 10px;
+    padding-top: 0px;
     /*margin-top: 30px;*/
  }
+ /* Réglage du lien */
+ @media screen and (max-width: 926px)
+{
+    section[id="firstSection"] a{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1;
+        color: #008069;
+        text-decoration: none; 
+        /*position: absolute;
+        left: 60px;
+        bottom: 66px;*/
+        text-align: justify;
+        margin-top: 40px;
+        padding-top: 0px;
+        /*margin-top: 30px;*/
+     }
+}
 
 div[id="instructionAndQrCode"]{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex: 1;
     /*background-color: blue;*/
     /*max-width: 909px;*/
     height: 264px;
@@ -175,12 +212,14 @@ div[id="instruction"]{
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     flex: 1;
     /*max-width: 465px;*/
     height: 255px;
     margin-top: 0px;
     margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
     /*background-color: yellow;*/
     
 }
@@ -190,7 +229,7 @@ div[id="instruction"] h1{
     flex-wrap: wrap;
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 90px;
     margin-bottom: 52px;
     padding-left: 0px;
     padding-right: 0px;
@@ -215,7 +254,8 @@ div[id="instruction"] ol{
     margin-inline-end: 0px;
     padding-inline-start: 40px;*/
     display: flex;
-    flex-wrap: wrap;
+    flex: 1;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
@@ -234,6 +274,7 @@ div[id="instruction"] ol{
 }
 
 div[id="instruction"] li{
+    flex-wrap: wrap;
    font-size: 18px;
    line-height: 28px;
    color: #3b4a54;
@@ -256,11 +297,20 @@ strong{
 span{
     display: inline-block;
     vertical-align: top;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
 }
 
 img{
-    /*margin-left: 85px;*/
-    margin-left: 0px;
+    /*margin-left: 65px;*/
+    margin-left: 4px;
 
     margin-right: 0px;
 }
@@ -268,7 +318,10 @@ img{
 /* 2nd part */
 
 section[id="secondSection"]{
-    width: 789px;
+
+    max-width: 789px;
+    min-width: 607px;
+
     height: 314px;
    /* background-color: rgba(11,20,26,.025);*/
     padding: 72px 60px;
