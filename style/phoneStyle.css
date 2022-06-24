@@ -12,7 +12,6 @@
  
     --app-background : #eae6df;
     --app-background-deeper : #d1d7db;
-    /*background-color: blue;*/
 }
 
 
@@ -29,8 +28,7 @@ body{
     margin-right: 6px;
     margin-top: 0px;
     margin-bottom: 0px;
-    /*min-width: 827px;*/
-    /*background-color: green;*/
+    
 
 
     background-color: var(--app-background);
@@ -50,7 +48,6 @@ div[id="header"]::before{
     display: flex;
     flex: 1;
     background-color: #00a884;
-    /*background-color: red;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -75,8 +72,7 @@ div[id="header"]{
     margin-right: 0px;
     margin-top: 0px;
     min-width: 687px;
-    /*background-color: red;*/
-    /*margin-top: 27px;*/
+    
     z-index: 2;
 }
 
@@ -89,21 +85,15 @@ header{
     align-items: center;
     height: 39px;
     margin: 27px auto 28px ;
-   /* border: 2px solid blue;*/
 }
 
 header svg{
-    /*margin-left: 150px; */
     width: 39px;
     height: 39px;
 }
 
 header p{
-    /* margin-left: 14px;
-        /*display: inline-block;
-    font-size: 14px;
-    font-weight: 500px;
-     */
+    
     font-family: inherit;
     display: inline-block;
     font-size: 14px;
@@ -117,11 +107,9 @@ header p{
 
 div[id="main"]{
     display: flex;
-    /*flex: 1;*/
     flex-direction: column;
     justify-content: flex-start ;
     align-items: stretch ;
-    /*max-width: 909px;*/
     min-width: 687px;
     min-height: 1110px;
     margin: auto;
@@ -137,7 +125,6 @@ div[id="main"]{
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    /*padding-bottom: 92px;*/
 
 }
 
@@ -147,13 +134,10 @@ section[id="firstSection"]{
     flex-direction: column;
     align-items: stretch ;
     justify-content: space-between;
-    /*max-width: 789px;*/
     min-width: 545px;
 
-    /*height: 577px;*/
     min-height: 580px;
     background-color: white;
-    /*padding: 64px 60px 110px;*/
     padding-left: 52px;
     padding-right: 52px;
     padding-top: 58px;
@@ -163,16 +147,10 @@ section[id="firstSection"]{
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    /*position: absolute;
-    z-index: 2;*/
+    
     
     border-radius: 3px 3px 0px 0px;
-    /*box-shadow: 5px 5px 5px black;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px; */
+   
 }
 
 section[id="firstSection"] a{
@@ -189,7 +167,6 @@ section[id="firstSection"] a{
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: px;
-    /*margin: auto;*/
     margin-top: 28px;
     margin-bottom: 52px;
     margin-left: 0px;
@@ -199,15 +176,9 @@ section[id="firstSection"] a{
 div[id="instructionAndQrCode"]{
     display: flex;
     flex-direction: column;
-    /*flex-wrap: nowrap;*/
-    /*flex: 1;*/
-    /*background-color: blue;*/
-    /*max-width: 909px;*/
-    /*min-width: 450px;*/
-    /*height: 577px;*/
+    
     min-height: 577px;
     justify-content: flex-start;
-    /*align-items: flex-start;*/
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -222,15 +193,12 @@ div[id="instruction"]{
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
-    /*flex: 1;*/
-    /*max-width: 465px;*/
+    
     max-height: 230px;
     margin-top: 0px;
     margin-left: 0px;
     padding-right: 0px;
     margin-right: 0px;
-    /*background-color: yellow;*/
     margin-bottom: 80px;
     
 }
@@ -247,16 +215,12 @@ div[id="instruction"] h1{
     padding-top: 0px;
     padding-bottom: 0px;
 
-   /* width: 465px;
-    height: 37px;*/
-
     font-size: 28px;
     font-weight: 300;
     line-height: normal;
     color: #41525d;
     vertical-align: initial;
     outline: none;
-    /*font-family: "Segeo UI";*/
 }
 div[id="instruction"] ol{
     
@@ -277,7 +241,6 @@ div[id="instruction"] ol{
     padding-right: 0px;
     padding-left: 24px;
     height: 155px;
-    /*background-color: blue;*/
     
 }
 
@@ -288,14 +251,7 @@ div[id="instruction"] li{
    color: #3b4a54;
    /*display: list-item;*/
    list-style-position: outside;
-   /*margin-bottom: 10px;*/
-
-   /*unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;*/
+   
 }
 
 strong{
@@ -321,11 +277,7 @@ span[id="qrCode"]{
 }
 
 img{
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    /*margin-left: 65px;*/
-    /*margin-left: 4px;*/
+    
     height: 264px;
     width: 264px;
     margin-top: 0px;
@@ -337,31 +289,30 @@ img{
 
 section[id="secondSection"]{
 
-    /*max-width: 789px;*/
-    min-width: 546px;
+    min-width: 687px;
 
     min-height: 390px;
-    /*background-color:blue;*/
-    /*padding: 72px 60px;*/
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    /*margin: auto;*/
     border-radius: 0px 0px 3px 3px;
-    /*position: relative;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
    
 
 }
 section[id="secondSection"] video{
-    width: 560px;
-    height: 314px;
-    /*background-color: rgba(11,20,26,.025);*/
-    /*padding: 72px 60px;*/
+
+    flex-direction: column;
+    align-items: stretch;
+
+    min-width: 687px;
+    min-height: 390px;
+    display: flex;
+    flex: 1;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
