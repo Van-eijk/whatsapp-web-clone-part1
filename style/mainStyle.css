@@ -354,8 +354,7 @@ section[id="secondSection"] video{
 
 button[id="play"]{
     position: absolute;
-    left: 640px;
-    top: 720px;
+
     z-index: 3;
     width: 80px;
     height: 80px;
