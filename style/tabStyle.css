@@ -322,3 +322,24 @@ section[id="secondSection"] video{
     padding-right: 0px;
     padding-left: 0px;
 }
+
+
+button[id="play"]{
+    position: absolute;
+    left: 350px;
+    top: 963px;
+    z-index: 3;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(11,20,26,.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+span[id="logoPlay"]{
+    margin-left: 5px;
+}
